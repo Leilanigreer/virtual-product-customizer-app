@@ -1,15 +1,15 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "d0fe47f56ddd0b165411846ecab082c8"
-name = "virtual-product-customizer-app"
+name = "VPO - Virtual Product Options"
 handle = "virtual-product-customizer-app"
-application_url = "https://female-gardening-croatia-german.trycloudflare.com"
+application_url = "https://virtual-product-options-app-production.up.railway.app"
 embedded = true
 
 [build]
 include_config_on_deploy = true
 dev_store_url = "lpc-product-management-dev.myshopify.com"
-automatically_update_urls_on_dev = true
+automatically_update_urls_on_dev = false
 
 [webhooks]
 api_version = "2025-01"
@@ -24,13 +24,13 @@ api_version = "2025-01"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "read_fulfillments,read_inventory,read_locations,read_orders,read_products,read_publications,write_fulfillments,write_inventory,write_products,write_publications"
 
 [auth]
 redirect_urls = [
-  "https://female-gardening-croatia-german.trycloudflare.com/auth/callback",
-  "https://female-gardening-croatia-german.trycloudflare.com/auth/shopify/callback",
-  "https://female-gardening-croatia-german.trycloudflare.com/api/auth/callback"
+  "https://virtual-product-options-app-production.up.railway.app/auth/callback",
+  "https://virtual-product-options-app-production.up.railway.app/auth/shopify/callback",
+  "https://virtual-product-options-app-production.up.railway.app/api/auth/callback"
 ]
 
 [pos]

@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "ae04570ff813ba21d7f5cf63712b550a"
-name = "virtual-product-customizer-dev"
+name = "VPO - dev"
 handle = "virtual-product-customizer-dev"
 application_url = "https://punch-pasta-ones-actions.trycloudflare.com"
 embedded = true
@@ -9,13 +9,15 @@ embedded = true
 [build]
 include_config_on_deploy = true
 automatically_update_urls_on_dev = true
+dev_store_url = "lpc-product-management-dev.myshopify.com "
+
 
 [webhooks]
 api_version = "2025-01"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "read_fulfillments,read_inventory,read_locations,read_orders,read_products,read_publications,write_fulfillments,write_inventory,write_products,write_publications"
 
 [auth]
 redirect_urls = [

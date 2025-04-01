@@ -1,26 +1,28 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "d9002a936172727d4d51c6f9ebfb4f09"
-name = "virtual-product-customizer-stg"
+name = VPO - stg"
 handle = "virtual-product-customizer-stg"
-application_url = "https://audit-agenda-ab-subsection.trycloudflare.com"
+application_url = "https://virtual-product-options-app-staging.up.railway.app"
 embedded = true
 
 [build]
 include_config_on_deploy = true
+dev_store_url = "lpc-product-management-staging.myshopify.com "
+automatically_update_urls_on_dev = false
 
 [webhooks]
 api_version = "2025-01"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "read_fulfillments,read_inventory,read_locations,read_orders,read_products,read_publications,write_fulfillments,write_inventory,write_products,write_publications"
 
 [auth]
 redirect_urls = [
-  "https://audit-agenda-ab-subsection.trycloudflare.com/auth/callback",
-  "https://audit-agenda-ab-subsection.trycloudflare.com/auth/shopify/callback",
-  "https://audit-agenda-ab-subsection.trycloudflare.com/api/auth/callback"
+  "https://virtual-product-options-app-staging.up.railway.app/auth/callback",
+  "https://virtual-product-options-app-staging.up.railway.app/auth/shopify/callback",
+  "https://virtual-product-options-app-staging.up.railway.app/api/auth/callback"
 ]
 
 [pos]
