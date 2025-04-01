@@ -3,7 +3,7 @@
 client_id = "d0fe47f56ddd0b165411846ecab082c8"
 name = "virtual-product-customizer-app"
 handle = "virtual-product-customizer-app"
-application_url = "https://cached-insulation-ideas-church.trycloudflare.com"
+application_url = "https://female-gardening-croatia-german.trycloudflare.com"
 embedded = true
 
 [build]
@@ -28,9 +28,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://cached-insulation-ideas-church.trycloudflare.com/auth/callback",
-  "https://cached-insulation-ideas-church.trycloudflare.com/auth/shopify/callback",
-  "https://cached-insulation-ideas-church.trycloudflare.com/api/auth/callback"
+  "https://female-gardening-croatia-german.trycloudflare.com/auth/callback",
+  "https://female-gardening-croatia-german.trycloudflare.com/auth/shopify/callback",
+  "https://female-gardening-croatia-german.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

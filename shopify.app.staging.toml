@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "d9002a936172727d4d51c6f9ebfb4f09"
+name = "virtual-product-customizer-stg"
+handle = "virtual-product-customizer-stg"
+application_url = "https://audit-agenda-ab-subsection.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2025-01"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://audit-agenda-ab-subsection.trycloudflare.com/auth/callback",
+  "https://audit-agenda-ab-subsection.trycloudflare.com/auth/shopify/callback",
+  "https://audit-agenda-ab-subsection.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false

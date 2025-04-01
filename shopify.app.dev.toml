@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ae04570ff813ba21d7f5cf63712b550a"
+name = "virtual-product-customizer-dev"
+handle = "virtual-product-customizer-dev"
+application_url = "https://punch-pasta-ones-actions.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-01"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://punch-pasta-ones-actions.trycloudflare.com/auth/callback",
+  "https://punch-pasta-ones-actions.trycloudflare.com/auth/shopify/callback",
+  "https://punch-pasta-ones-actions.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
